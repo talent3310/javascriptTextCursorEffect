@@ -1,0 +1,73 @@
+ /**
+ * @author Deniz A.
+ * created on 22.4.2016
+ */
+
+ #blinking-cursor {
+     font-weight: 100;
+     -webkit-animation: .7s blink step-end infinite;
+     -moz-animation: .7s blink step-end infinite;
+     -ms-animation: .7s blink step-end infinite;
+     -o-animation: .7s blink step-end infinite;
+     animation: .7s blink step-end infinite;
+ }
+ 
+ @keyframes "blink" {
+     from,
+     to {
+         color: transparent;
+     }
+     50% {
+         color: white;
+     }
+ }
+ 
+ @-moz-keyframes blink {
+     from,
+     to {
+         color: transparent;
+     }
+     50% {
+         color: white;
+     }
+ }
+ 
+ @-webkit-keyframes "blink" {
+     from,
+     to {
+         color: transparent;
+     }
+     50% {
+         color: white;
+     }
+ }
+ 
+ @-ms-keyframes "blink" {
+     from,
+     to {
+         color: transparent;
+     }
+     50% {
+         color: white;
+     }
+ }
+ 
+ @-o-keyframes "blink" {
+     from,
+     to {
+         color: transparent;
+     }
+     50% {
+         color: white;
+     }
+ }
+ 
+ .cursorTextEffect {
+     text-align: center;
+     font-size: 72px;
+     font-weight: 700;
+     color: white;
+ }
+body {
+	background: grey;
+}

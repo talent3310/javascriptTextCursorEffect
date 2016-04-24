@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title> Deniz Text Effect </title>
+    <link rel="stylesheet" href="./src/textEffectWithCursor.css">
+    <script type="text/javascript" src="./src/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="./src/textEffectWithCursor.js"></script>
+
+</head>
+
+<body>
+    <div class="cursorTextEffect">
+        <span id="deniz"></span>
+        <span class="typed-cursor" id="blinking-cursor">|</span>
+        <span>Differently</span>
+    </div>
+    <style>
+   
+    </style>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $("#deniz").typed({
+            strings: ["Target ", "Reach ", "Engage"],
+            typeSpeed: 45,
+            backSpeed: 0,
+            startDelay: 0,
+            backDelay: 1500,
+            loop: true,
+            loopCount: false,
+            showCursor: true,
+            cursorChar: "|",
+            attr: null
+        });
+    });
+    </script>
+</body>
+
+</html>
